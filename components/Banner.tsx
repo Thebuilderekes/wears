@@ -1,9 +1,9 @@
-import React, { useRef } from 'react';
-import Slider from 'react-slick';
-import Image from 'next/image';
-import { hotel2, hotel3 } from '../public/assets/images/index';
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
-import BannerText from './BannerText';
+import React, { useRef } from "react";
+import Slider from "react-slick";
+import Image from "next/image";
+import { hotel2, hotel3 } from "../public/assets/images/index";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import BannerText from "./BannerText";
 const Banner = () => {
   const settings = {
     dots: false,
@@ -15,7 +15,7 @@ const Banner = () => {
     speed: 500,
     autoplaySpeed: 4000,
     pauseOnHover: true,
-    cssEase: 'linear',
+    cssEase: "linear",
   };
 
   let sliderRef = useRef(null);
@@ -67,7 +67,7 @@ const Banner = () => {
         </Slider>
         <div
           className="absolute top-[60%] w-full flex justify-between"
-          style={{ textAlign: 'center' }}
+          style={{ textAlign: "center" }}
         >
           <button className="button bg-white p-4" onClick={previous}>
             <IoIosArrowBack />

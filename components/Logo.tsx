@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import { lusitana } from '../public/assets/fonts/fonts';
+import { lusitana } from "../public/assets/fonts/fonts";
 const Logo = () => {
   return (
     <div>
