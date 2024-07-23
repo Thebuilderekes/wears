@@ -1,7 +1,9 @@
-import React from "react";
-import Logo from "./Logo";
-// import { IoSearchSharp} from 'react-icons/io';
-import { IoSearchSharp } from "react-icons/io5";
+import React from 'react';
+import Logo from './Logo';
+import Link from 'next/link';
+import { IoSearchSharp } from 'react-icons/io5';
+
+import { IoMdCart } from 'react-icons/io';
 const Navbar = () => {
   return (
     <div className="bg-blue pt-4 pb-2 px-2 max-w-container">
@@ -28,11 +30,13 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="">Cart</a>
+              <Link href="/Cart">
+                <IoMdCart className="text-white" width={40} />
+              </Link>
             </li>
           </ul>
         </div>
-        <div className="w-full flex text-white justify-between border-t-white py-2">
+        <div className="w-full flex text-white justify-between border-t-gray-500 py-2">
           <address>
             <p>Yenagoa, bayelsa</p>
           </address>
@@ -54,7 +58,6 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div />
       </nav>
     </div>
   );

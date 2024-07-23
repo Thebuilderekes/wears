@@ -1,32 +1,18 @@
 {
   "compilerOptions": {
-    "lib": ["es2015", "es2017", "dom", "esnext"],
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
     "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
     "esModuleInterop": true,
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "target": "ES2016",
-    "declaration": false,
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "noImplicitAny": false,
-    "allowJs": false,
-    "preserveConstEnums": true,
-    "removeComments": true,
-    "sourceMap": true,
-    "typeRoots": ["./node_modules/@types"],
-    "keyofStringsOnly": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
     "jsx": "preserve",
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "incremental": true,
-    "paths": {
-      "@/*": ["./*"]
-    }
+    "paths": { "@/*": ["./*"] }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]

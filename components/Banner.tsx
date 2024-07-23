@@ -28,7 +28,7 @@ const Banner = () => {
 
   return (
     <>
-      <div className="slider-container slider-container-size w-full h-[400px] shadow-bannerShadow relative">
+      <div className="slider-container slider-container-size w-full shadow-bannerShadow relative">
         <Slider
           ref={(slider) => {
             sliderRef = slider;
@@ -36,14 +36,14 @@ const Banner = () => {
           {...settings}
         >
           <div className="relative    ">
-            <Image className="relative" src={hotel2} alt="bed in fancy room" />
+            <Image src={hotel2} alt="bed in fancy  room" priority />
             <div className="absolute top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/3">
               <BannerText title="Shop for your jeans" btnText="Shop now" />
             </div>
           </div>
 
           <div className="relative">
-            <Image src={hotel3} alt="bed in fancy room" />
+            <Image src={hotel3} alt="bed in fancy  room" priority />
 
             <div className="absolute top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/3">
               <BannerText title="Shop for your jeans" btnText="Shop now" />
@@ -51,7 +51,7 @@ const Banner = () => {
           </div>
 
           <div className="relative">
-            <Image src={hotel2} alt="bed in fancy room" />
+            <Image src={hotel2} alt="bed in fancy  room" priority />
 
             <div className="absolute top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/3">
               <BannerText title="Shop for your t-shirts" btnText="Shop now" />
@@ -59,7 +59,7 @@ const Banner = () => {
           </div>
 
           <div className="relative">
-            <Image src={hotel3} alt="bed in fancy room" />
+            <Image src={hotel3} alt="bed in fancy  room" priority />
             <div className="absolute top-[30%] left-1/2 -translate-x-1/2 -translate-y-1/3">
               <BannerText title="Shop for your shoes" btnText="Shop now" />
             </div>
